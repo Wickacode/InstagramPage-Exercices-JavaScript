@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine le chiffre</title>
+</head>
+<body>
+    <p>Devine le chiffre secret entre 1 et 100 </p>
+      <div>
+        <form id="myForm" onsubmit="return verificationChiffre(document.getElementById('coupSubmit'));">
+          <div>
+            <input type="text" id="coupSubmit" size="4">
+            <input type="submit" value="Tester">
+          </div>
+        </form>
+      </div>
+      <p id="result"></p>
+      <div id="history">
+        <p>Historique des coups :</p>
+      </div>
+
+
+    <script src="ex5.js"></script>
+</body>
+</html>
