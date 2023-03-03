@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta name="description" content="Comment réaliser un QR code avec javascript" />
+    <title>QR Code</title>
+</head>
+<body>
+    <h1>Générateur de QR code</h1>
+    <form>
+      <label for="qrdata">Entre les données que tu souhaites stocker:</label>
+      <input type="text" id="qrdata" name="qrdata" placeholder="Exemple: https://www.google.com">
+      <button type="button" onclick="generateQR()">Générer</button>
+    </form>
+    <div id="qrcode"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <script src="ex10.js"></script>
+</body>
+</html>
